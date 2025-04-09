@@ -1,0 +1,102 @@
+{
+  "popularTrips": {
+    "sectionTitle": "Unsere beliebtesten Reisen",
+    "categories": [
+      {
+        "id": "fernreisen",
+        "title": "Fernreisen",
+        "subtitle": "Entdecken Sie ferne Länder und Kulturen",
+        "description": "Von den Tempeln Asiens bis zu den Savannen Afrikas",
+        "image": "/images/fernreisen-bg.jpg",
+        "slug": "fernreisen",
+        "destinations": [
+          "Thailand",
+          "Vietnam",
+          "Südafrika",
+          "Namibia",
+          "Costa Rica"
+        ]
+      },
+      {
+        "id": "europa",
+        "title": "Europa",
+        "subtitle": "Entdecken Sie die Vielfalt Europas",
+        "description": "Von mediterranen Küsten bis zu alpinen Gipfeln",
+        "image": "/images/europa-bg.jpg",
+        "slug": "europa",
+        "destinations": [
+          "Italien",
+          "Spanien",
+          "Griechenland",
+          "Kroatien",
+          "Portugal"
+        ]
+      },
+      {
+        "id": "bestseller",
+        "title": "Bestseller",
+        "subtitle": "Unsere beliebtesten Reiseziele",
+        "description": "Die meist gebuchten Reisen unserer Gäste",
+        "image": "/images/bestseller-bg.jpg",
+        "slug": "bestseller",
+        "destinations": [
+          "Toskana",
+          "Andalusien",
+          "Kreta",
+          "Istrien",
+          "Algarve"
+        ]
+      }
+    ],
+    "featuredDestinations": [
+      {
+        "id": "suedafrika",
+        "title": "Südafrika",
+        "subtitle": "Sternstunden",
+        "href": "/suedafrika-reisen/suedafrika-rundreise-krueger-bis-kapstadt",
+        "image": "/images/south-africa.jpg",
+        "days": 15,
+        "description": "Auf dieser 15-tägigen Rundreise erleben Sie die Glanzlichter Südafrikas: atemberaubende Natur, faszinierende Kultur und beeindruckende",
+        "guests": "4 bis 12 Gäste",
+        "price": "4.299",
+        "bestseller": true
+      },
+      {
+        "id": "vietnam",
+        "title": "Vietnam & Kambodscha",
+        "subtitle": "Höhepunkte",
+        "href": "/vietnam-reisen/vietnam-kambodscha-rundreise-hoehepunkte",
+        "image": "/images/vietnam.jpg",
+        "days": 15,
+        "description": "Faszinierende Städte, traumhafte Landschaften, geheimnisvolle Tempelanlagen, die eindrucksvolle Halong-Bucht sowie das Herzstück des alten",
+        "guests": "4 bis 12 Gäste",
+        "price": "2.999",
+        "bestseller": true
+      },
+      {
+        "id": "tansania",
+        "title": "Tansania & Sansibar",
+        "subtitle": "Höhepunkte",
+        "href": "/tansania-reisen/tansania-sansibar-rundreise-hoehepunkte",
+        "image": "/images/tanzania.jpg",
+        "days": 15,
+        "description": "Wer sich nach Afrika sehnt, denkt an majestätische Löwen, gigantische Herden von Antilopen, Zebras und Gnus und die weite Savanne.",
+        "guests": "4 bis 12 Gäste",
+        "price": "4.699",
+        "bestseller": true
+      },
+      {
+        "id": "costa-rica",
+        "title": "Costa Rica",
+        "subtitle": "Höhepunkte",
+        "href": "/costa-rica-reisen/costa-rica-rundreise-garten-eden",
+        "image": "/images/costa-rica.jpg",
+        "days": 16,
+        "description": "Diese 16-tägige Reise führt Sie nicht nur an die traumhafte Pazifikküste, sondern auch in den Urwald der Karibikküste.",
+        "guests": "4 bis 12 Gäste",
+        "price": "3.999",
+        "bestseller": true
+      }
+    ]
+  }
+} 

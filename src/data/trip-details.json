@@ -1,0 +1,42 @@
+{
+  "trips": {
+    "suedafrika-rundreise-krueger-bis-kapstadt": {
+      "title": "Südafrika Rundreise: Von Krüger bis Kapstadt",
+      "subtitle": "Sternstunden in Südafrika",
+      "duration": {
+        "days": 15,
+        "nights": 14
+      },
+      "price": {
+        "amount": 4299,
+        "includes": [
+          "Flüge ab/bis Frankfurt",
+          "Alle Transfers",
+          "14 Übernachtungen in ausgewählten Hotels",
+          "Frühstück",
+          "Deutschsprachige Reiseleitung"
+        ]
+      },
+      "highlights": [
+        "Krüger Nationalpark Safari",
+        "Panorama Route",
+        "Kapstadt & Tafelberg",
+        "Kap der Guten Hoffnung",
+        "Weinregion Stellenbosch"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Anreise nach Johannesburg",
+          "description": "Flug von Frankfurt nach Johannesburg..."
+        }
+      ],
+      "images": [
+        {
+          "url": "/images/south-africa/kruger.jpg",
+          "alt": "Krüger Nationalpark"
+        }
+      ]
+    }
+  }
+} 

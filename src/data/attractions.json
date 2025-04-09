@@ -1,0 +1,19 @@
+{
+  "attractions": [
+    {
+      "id": "1",
+      "title": "Wine Tasting Experience",
+      "slug": "wine-tasting-experience",
+      "shortDescription": "Experience the finest wines in our cellar",
+      "fullDescription": "Immerse yourself in an extraordinary wine tasting journey...",
+      "image": "/images/wine-tasting.jpg",
+      "features": [
+        "Professional sommelier",
+        "Premium wine selection",
+        "Food pairing"
+      ],
+      "price": "89",
+      "duration": "2 hours"
+    }
+  ]
+}

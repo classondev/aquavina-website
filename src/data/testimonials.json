@@ -1,0 +1,21 @@
+{
+  "sectionTitle": "What Our Guests Say",
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Sarah Johnson",
+      "role": "Wine Enthusiast",
+      "comment": "An unforgettable experience through the vineyards. The sommelier was incredibly knowledgeable!",
+      "rating": 5,
+      "image": "/images/testimonials/sarah.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Michael Chen",
+      "role": "Food Critic",
+      "comment": "The wine and food pairing experience was exceptional. Highly recommended!",
+      "rating": 5,
+      "image": "/images/testimonials/michael.jpg"
+    }
+  ]
+} 

@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Experience Luxury Wine Tours",
+    "subtitle": "Discover the finest vineyards and wine tasting experiences",
+    "searchPlaceholder": "Search for wine tours...",
+    "backgroundImage": "/images/hero-bg.jpg",
+    "ratings": {
+      "score": "4.9",
+      "platform": "TripAdvisor",
+      "totalReviews": "2,394"
+    }
+  }
+} 

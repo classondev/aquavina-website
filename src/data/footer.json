@@ -1,0 +1,33 @@
+{
+  "companyInfo": {
+    "name": "Aquavina Tours",
+    "address": "123 Wine Valley Road",
+    "city": "Bordeaux",
+    "country": "France",
+    "email": "info@aquavina.com",
+    "phone": "+33 123 456 789"
+  },
+  "links": {
+    "company": {
+      "title": "Company",
+      "items": [
+        { "label": "About Us", "href": "/about" },
+        { "label": "Our Team", "href": "/team" },
+        { "label": "Careers", "href": "/careers" }
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "items": [
+        { "label": "Contact", "href": "/contact" },
+        { "label": "FAQ", "href": "/faq" },
+        { "label": "Terms", "href": "/terms" }
+      ]
+    }
+  },
+  "social": {
+    "facebook": "https://facebook.com/aquavina",
+    "instagram": "https://instagram.com/aquavina",
+    "twitter": "https://twitter.com/aquavina"
+  }
+} 

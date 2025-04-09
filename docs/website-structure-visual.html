@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKR Reisen Website Structure</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #3d5a69;
+        }
+
+        .diagram-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .component {
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+        }
+
+        .component h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .component p {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .server-component {
+            background-color: #e1f5e1;
+            border: 2px solid #4caf50;
+        }
+
+        .client-component {
+            background-color: #ffeeee;
+            border: 2px solid #ff5252;
+        }
+
+        .ui-component {
+            background-color: #e3f2fd;
+            border: 2px solid #2196f3;
+        }
+
+        .layout-component {
+            background-color: #fff8e1;
+            border: 2px solid #ffc107;
+        }
+
+        .connector {
+            height: 30px;
+            border-left: 2px dashed #999;
+            margin: 0 auto;
+            width: 2px;
+        }
+
+        .horizontal-connector {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .horizontal-connector::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            border-top: 2px dashed #999;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .subcomponents {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .subcomponent {
+            width: calc(25% - 20px);
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .legend-box {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .subcomponent {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>SKR Reisen Website Structure</h1>
+
+    <div class="diagram-container">
+        <!-- Root Layout -->
+        <div class="row">
+            <div class="component layout-component">
+                <h3>RootLayout (layout.tsx)</h3>
+                <p>Next.js Root Layout Component</p>
+            </div>
+        </div>
+
+        <div class="connector"></div>
+
+        <!-- ClientBody -->
+        <div class="row">
+            <div class="component client-component">
+                <h3>ClientBody (ClientBody.tsx)</h3>
+                <p>Client Component ('use client')</p>
+            </div>
+        </div>
+
+        <div class="connector"></div>
+
+        <!-- Home -->
+        <div class="row">
+            <div class="component server-component">
+                <h3>Home (page.tsx)</h3>
+                <p>Server Component (default in App Router)</p>
+            </div>
+        </div>
+
+        <div class="connector"></div>
+
+        <!-- Main Components -->
+        <div class="row">
+            <div class="component client-component">
+                <h3>Navbar</h3>
+                <p>Client Component</p>
+            </div>
+
+            <div class="component client-component">
+                <h3>HeroSection</h3>
+                <p>Client Component</p>
+            </div>
+
+            <div class="component server-component">
+                <h3>DestinationCategories</h3>
+                <p>Server Component</p>
+            </div>
+
+            <div class="component server-component">
+                <h3>PopularDestinations</h3>
+                <p>Server Component</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="component server-component">
+                <h3>ClimateProtection</h3>
+                <p>Server Component</p>
+            </div>
+
+            <div class="component server-component">
+                <h3>Testimonials</h3>
+                <p>Server Component</p>
+            </div>
+
+            <div class="component server-component">
+                <h3>Footer</h3>
+                <p>Server Component</p>
+            </div>
+        </div>
+
+        <div class="connector"></div>
+
+        <!-- Subcomponents -->
+        <h3 style="text-align: center; margin: 20px 0; color: #3d5a69;">Subcomponents Breakdown</h3>
+
+        <div class="subcomponents">
+            <div class="subcomponent">
+                <div class="component client-component">
+                    <h3>Navbar</h3>
+                </div>
+                <div class="connector"></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <div class="component" style="width: 45%;">Logo</div>
+                    <div class="component" style="width: 45%;">Desktop Nav</div>
+                </div>
+                <div class="connector"></div>
+                <div class="component">Mobile Menu (Sheet)</div>
+            </div>
+
+            <div class="subcomponent">
+                <div class="component client-component">
+                    <h3>HeroSection</h3>
+                </div>
+                <div class="connector"></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <div class="component" style="width: 45%;">Hero Image</div>
+                    <div class="component" style="width: 45%;">Search Form</div>
+                </div>
+                <div class="connector"></div>
+                <div class="component">Rating Display</div>
+            </div>
+
+            <div class="subcomponent">
+                <div class="component server-component">
+                    <h3>Destinations</h3>
+                </div>
+                <div class="connector"></div>
+                <div class="component">Categories Grid</div>
+                <div class="connector"></div>
+                <div class="component">Destination Cards</div>
+            </div>
+
+            <div class="subcomponent">
+                <div class="component server-component">
+                    <h3>Footer</h3>
+                </div>
+                <div class="connector"></div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <div class="component" style="width: 45%;">Nav Links</div>
+                    <div class="component" style="width: 45%;">Company Info</div>
+                </div>
+                <div class="connector"></div>
+                <div class="component">Legal Links</div>
+            </div>
+        </div>
+
+        <!-- UI Components -->
+        <h3 style="text-align: center; margin: 30px 0 20px; color: #3d5a69;">UI Components (shadcn/ui)</h3>
+
+        <div class="row">
+            <div class="component ui-component">Button</div>
+            <div class="component ui-component">Card</div>
+            <div class="component ui-component">DropdownMenu</div>
+            <div class="component ui-component">Input</div>
+            <div class="component ui-component">Select</div>
+            <div class="component ui-component">Sheet</div>
+            <div class="component ui-component">Tabs</div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-box layout-component"></div>
+                <span>Layout Components</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box server-component"></div>
+                <span>Server Components</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box client-component"></div>
+                <span>Client Components</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box ui-component"></div>
+                <span>UI Components (shadcn/ui)</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

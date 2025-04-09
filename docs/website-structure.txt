@@ -1,0 +1,75 @@
+SKR Reisen Website Structure
+============================
+
+RootLayout (layout.tsx)
+│
+└── ClientBody (ClientBody.tsx) [Client Component]
+    │
+    └── Home (page.tsx)
+        │
+        ├── Navbar (Navbar.tsx) [Client Component]
+        │   ├── Logo
+        │   ├── Desktop Navigation
+        │   │   ├── Main Menu Items (with Dropdown Menus)
+        │   │   └── Secondary Navigation Items
+        │   └── Mobile Menu (Sheet/Sidebar)
+        │
+        ├── HeroSection (HeroSection.tsx) [Client Component]
+        │   ├── Hero Image with Overlay
+        │   ├── Title & Subtitle
+        │   ├── Search Form
+        │   │   ├── Destination Input
+        │   │   ├── Duration Select
+        │   │   └── Search Button
+        │   └── Ratings Display
+        │
+        ├── DestinationCategories (DestinationCategories.tsx)
+        │   └── Category Cards Grid
+        │
+        ├── PopularDestinations (PopularDestinations.tsx)
+        │   ├── Section Title
+        │   └── Destination Cards
+        │       ├── Image
+        │       ├── Title
+        │       ├── Description
+        │       └── Price/CTA
+        │
+        ├── ClimateProtection (ClimateProtection.tsx)
+        │   ├── Icon/Image
+        │   ├── Title
+        │   └── Description
+        │
+        ├── Testimonials (Testimonials.tsx)
+        │   ├── Section Title
+        │   └── Testimonial Cards
+        │       ├── Quote
+        │       ├── Rating
+        │       └── Customer Info
+        │
+        └── Footer (Footer.tsx)
+            ├── Company Info
+            ├── Navigation Links (grouped by categories)
+            ├── Contact Information
+            ├── Social Media Links
+            └── Legal Links & Copyright
+
+UI Components (shadcn/ui)
+========================
+- Button
+- Card
+- Dropdown Menu
+- Form Elements
+- Hover Card
+- Input
+- Label
+- Select
+- Separator
+- Sheet
+- Tabs
+
+Styling
+=======
+- Tailwind CSS
+- Global CSS Variables (globals.css)
+- Custom Container Classes
+- Custom Button Classes

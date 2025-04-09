@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "The Art of Wine Making",
+      "slug": "art-of-wine-making",
+      "excerpt": "Discover the traditional methods of wine making...",
+      "content": "Full blog post content goes here...",
+      "author": "John Doe",
+      "date": "2024-04-08",
+      "image": "/images/wine-making.jpg",
+      "tags": ["wine", "production", "tradition"]
+    }
+    // Add more blog posts...
+  ]
+} 
